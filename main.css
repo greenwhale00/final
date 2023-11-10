@@ -126,4 +126,25 @@
 }
 
 
-@media(max-width:768px) {}
+@media(max-width:768px) {
+
+  .main_visual .slogan p {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 10px;
+  }
+
+  .main_visual .slogan h2 {
+    font-size: 10px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .main_content .container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+}
