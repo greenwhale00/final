@@ -124,3 +124,6 @@
   font-weight: 200;
   font-family: "Montserrat", sans-serif;
 }
+
+
+@media(max-width:768px) {}
