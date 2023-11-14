@@ -111,12 +111,14 @@
 
 .footer .container .f_menu {
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-between;
 }
 
 .footer .container .f_menu ul {
   display: flex;
   gap: 30px;
+  padding-bottom: 20px;
 }
 
 .footer .container .f_menu p {
@@ -124,6 +126,8 @@
   font-weight: 200;
   font-family: "Montserrat", sans-serif;
 }
+
+
 
 /*  반응형 */
 @media(max-width:768px) {
@@ -202,15 +206,10 @@
   }
 
   /*  main_content  */
-
-  .main_content {
-    background-color: #141010;
-    font-family: "Poppins", sans-serif;
-  }
-
   .main_content .container {
     display: flex;
-    gap: 80px;
+    flex-direction: column;
+    gap: 50px;
   }
 
   .main_content .container .left {
@@ -225,7 +224,9 @@
     font-weight: 200;
   }
 
+
   /*  footer  */
+
 
   .footer .container .f_menu {
     display: flex;
