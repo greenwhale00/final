@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 * {
   word-break: keep-all;
@@ -79,7 +80,7 @@
 
 .main_content {
   background-color: #141010;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .main_content .container {
@@ -96,7 +97,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 17px;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 /*  footer  */
@@ -131,11 +132,6 @@
 
 /*  반응형 */
 @media(max-width:768px) {
-  * {
-    word-break: keep-all;
-    color: #eeeeee;
-    /* outline: 1px dotted lime; */
-  }
 
   .gap {
     height: 80px;
@@ -146,7 +142,7 @@
   }
 
   .container {
-    width: calc(100vw - 160px);
+    width: calc(100vw - 40px);
     margin: 0 auto;
   }
 
@@ -236,12 +232,13 @@
 
   .footer .container .f_menu ul {
     display: flex;
+    flex-direction: column;
     gap: 30px;
     padding-bottom: 20px;
   }
 
   .footer .container .f_menu p {
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 200;
     font-family: "Montserrat", sans-serif;
   }
