@@ -63,6 +63,8 @@
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  width: 100%;
+  padding: 100px 0 0 70px;
 }
 
 .main_visual .slogan p {
@@ -135,18 +137,26 @@
 /*  반응형 */
 
 @media(max-width:1024px) {
+
   /*  main_visual  */
+
+  .main_visual {
+    position: relative;
+    height: 100vh;
+  }
 
   .main_visual .container {}
 
   .main_visual .slogan {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 40%;
     left: 50%;
+    width: 100%;
+    padding: 100px 0 0 20px;
   }
 
-  /* 
+
   .main_visual .slogan p {
     font-size: 15px;
     text-transform: uppercase;
@@ -158,7 +168,7 @@
     font-size: 30px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
-  } */
+  }
 
 }
 
@@ -206,13 +216,30 @@
 
   /*  main_visual  */
 
-  .main_visual .container {}
+  .main_visual {
+    position: relative;
+    height: 30vh;
+
+  }
+
+  /* 
+  .main_visual * {
+    border: 1px dotted lime;
+  } */
+
+  .main_visual .container {
+    position: absolute;
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+  }
 
   .main_visual .slogan {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 20%;
     left: 50%;
+    width: 100%;
+    padding: 100px 0 0 20px;
   }
 
   .main_visual .slogan p {
@@ -226,6 +253,7 @@
     font-size: 30px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
+    line-height: 1.3;
   }
 
   /*  main_content  */
